@@ -59,12 +59,21 @@ Create:
 - public ingress controller (kube-devops namespace)
 - ingress resource ( my namespace)
 
-And it worked!  
-But was this what i wanted?  
-Added costs, less security, more configuration needed on app gateway ( remember what)
+*And it worked!*
+- show ingress + describe
+- show app gtw 
+- show in browser (nginx + /mqtt-monitor/status)
+
+
+**But was this what i wanted?**
+
+> Added costs, less security, more configuration needed on app gateway ( remember what
  i want to expose is not HTTP )
 
 ![wolf](wolf-blow.png "wolf")
+
+<br /> <br /> <br /> <br />  
+
 
 ### Last option - Container registry
 ***
@@ -72,21 +81,29 @@ Added costs, less security, more configuration needed on app gateway ( remember 
 
 What if, instead of fighting against 4 wheels you embrace it?  
 Container registry k8s poor cousin<br/>
-It is an azure service :( , but acts just like k8s... you deploy an image from acr ( or other ) 
+It is an azure service :( , but acts just like k8s: you deploy an image from acr :) ( or other ) 
 
 -- SHOW DIAGRAM --
 -- SHOW Azure --
 
+<br /> <br /> <br /> <br />  
+
 ### One other option - IoT Hub
+***
+![ms fanboy](ms-fanboy.jpeg "fanboy")  
+
 For mqtt specific use case  
-Upside<br/>
+
+Upside
 - One less service to manage
 - auto scale out/up
 - supporting multiple other IOT protocols
-Downsides<br/>
+
+Downsides 
 - Azure specific
 - Hard to work without Azure SDKs
 - Mqtt 'mode' only has 1 topic 
+- Will be used by the MS fanboys to keep you in azure forever :P
 
 <br /><br /><br /><br /><br />
 
