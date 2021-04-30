@@ -83,8 +83,10 @@ What if, instead of fighting against 4 wheels you embrace it?
 Container registry k8s poor cousin<br/>
 It is an azure service :( , but acts just like k8s: you deploy an image from acr :) ( or other ) 
 
--- SHOW DIAGRAM --
--- SHOW Azure --
+[Azure Diagram confluence](https://atc.bmwgroup.net/confluence/x/ujNKUQ)
+
+-- Show Azure --
+-- Show MQTTX --
 
 <br /> <br /> <br /> <br />  
 
